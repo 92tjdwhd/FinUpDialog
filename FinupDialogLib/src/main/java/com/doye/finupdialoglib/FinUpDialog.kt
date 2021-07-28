@@ -120,8 +120,8 @@ internal class FinUpDialog(
             val btnPositiveButton = rootView.findViewById<Button>(R.id.btnConfirm)
 
             btnPositiveButton.text = positiveButton!!.text
-            btnPositiveButton.setOnClickListener {
-                positiveButton.listener?.let {
+            btnPositiveButton.setOnClickListener { view ->
+                positiveButton.listener?.let {it(view)
                     if (positiveButton.canDismiss) dismiss()
                 }
             }
@@ -129,8 +129,8 @@ internal class FinUpDialog(
             val btnNegativeButton = rootView.findViewById<Button>(R.id.btnCancel)
 
             btnNegativeButton.text = negativeButton!!.text
-            btnNegativeButton.setOnClickListener {
-                negativeButton.listener?.let {
+            btnNegativeButton.setOnClickListener { view ->
+                negativeButton.listener?.let {it(view)
                     if (negativeButton.canDismiss) dismiss()
                 }
             }
@@ -138,8 +138,8 @@ internal class FinUpDialog(
         } else {
             val btnPositiveButton = rootView.findViewById<Button>(R.id.btnCheck)
             btnPositiveButton.text = positiveButton!!.text
-            btnPositiveButton.setOnClickListener {
-                positiveButton.listener?.let {
+            btnPositiveButton.setOnClickListener { view ->
+                positiveButton.listener?.let { it(view)
                     if (positiveButton.canDismiss) dismiss()
                 }
             }

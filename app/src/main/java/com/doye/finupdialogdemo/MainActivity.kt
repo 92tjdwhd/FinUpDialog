@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                 .positiveButton("확인") {
 
                 }
-                .negativeButton("취소") {
+                .negativeButton("취소"){
 
                 }
                 .build()
