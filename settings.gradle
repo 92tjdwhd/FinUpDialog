@@ -1,0 +1,3 @@
+rootProject.name = "FinupDialogDemo"
+include ':app'
+include ':FinupDialogLib'
