@@ -4,8 +4,9 @@
 
 # PreView
 
-![Style1](https://user-images.githubusercontent.com/22476309/127270069-1194248b-1857-4d60-862e-d065925c4544.PNG)
-![Style2](https://user-images.githubusercontent.com/22476309/127270079-e8e5fcc4-1244-4411-a352-90018202ad13.PNG)
+![Style11](https://user-images.githubusercontent.com/22476309/127276011-9a3afc92-8daf-4a3f-8349-8d55898dd367.png)
+![Style22](https://user-images.githubusercontent.com/22476309/127276042-a5ab2fa2-a7b2-4b9b-bd9a-719dfefb710f.png)
+
 
 # Describe
 
