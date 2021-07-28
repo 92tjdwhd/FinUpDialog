@@ -82,10 +82,10 @@ class FinUpDialogBuilder {
     }
 
     /**
-     * 내용을 StringBuilder 텍스트로 추가합니다.
-     * @param contentTextStringBuilder 내용
+     * 내용을 SpannableString 텍스트로 추가합니다.
+     * @param contentTextSpannableString 내용
      */
-    fun setContentTextStringBuilder(contentTextStringBuilder: SpannableString):FinUpDialogBuilder  {
+    fun setContentTextSpannableString(contentTextStringBuilder: SpannableString):FinUpDialogBuilder  {
         this.contentTextSpannableString = contentTextStringBuilder
         return this
     }

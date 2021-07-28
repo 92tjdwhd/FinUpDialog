@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
 
         test.setOnClickListener {
             FinUpDialogBuilder()
-                .setTitle("test")
-                .setContentText("teastaetaet")
+                .setTitle("Title")
+                .setContentText("Content")
                 .positiveButton("확인") {
-                    Log.ERROR
+
                 }
-                .negativeButton("확인") {
-                    Log.ERROR
+                .negativeButton("취소") {
+
                 }
                 .build()
                 .show(supportFragmentManager,"normal")
