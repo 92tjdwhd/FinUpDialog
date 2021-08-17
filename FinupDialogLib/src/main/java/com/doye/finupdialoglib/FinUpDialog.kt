@@ -103,11 +103,12 @@ internal class FinUpDialog(
         } else {
             tvTitle.text = title
         }
-
+        tvTitle.textAlignment = View.TEXT_ALIGNMENT_CENTER
         if(titleTextBold) tvTitle.typeface = Typeface.DEFAULT_BOLD
 
 
         val tvContent = rootView.findViewById<TextView>(R.id.tvContent)
+        tvContent.textAlignment = View.TEXT_ALIGNMENT_CENTER
         if(contentTextSpannableString != null){
             tvContent.text = contentTextSpannableString
         }else{

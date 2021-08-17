@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
 
         test.setOnClickListener {
             FinUpDialogBuilder()
-                .setTitle("Title")
                 .setContentText("Content")
                 .positiveButton("확인") {
 
