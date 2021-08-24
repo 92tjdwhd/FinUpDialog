@@ -24,6 +24,9 @@ class FinUpDialogBuilder {
     private var titleIsBold: Boolean = false
     private var contentIsBold: Boolean = false
 
+    private var textTitleAlignment: Int? = null
+    private var textContentAlignment: Int? = null
+
     @ColorRes private var pointColor: Int? = null
     @LayoutRes private var contentRes: Int? = null
 
@@ -43,6 +46,8 @@ class FinUpDialogBuilder {
             titleIsBold,
             contentIsBold,
             textSize,
+            textTitleAlignment,
+            textContentAlignment,
             pointColor,
             positiveButton,
             negativeButton,
@@ -89,6 +94,25 @@ class FinUpDialogBuilder {
         this.contentTextSpannableString = contentTextStringBuilder
         return this
     }
+
+    /**
+     * 내용을 ContentTextAlignment 텍스트 정렬 추가합니다.
+     * @param textContentAlignment 내용
+     */
+    fun setContentTextAlignment(contentTextAlignment: Int):FinUpDialogBuilder  {
+        this.textContentAlignment = contentTextAlignment
+        return this
+    }
+
+    /**
+     * 내용을 TitleTextAlignment 텍스트 정렬 추가합니다.
+     * @param textContentAlignment 내용
+     */
+    fun setTitleTextAlignment(titleTextAlignment: Int):FinUpDialogBuilder  {
+        this.textTitleAlignment = titleTextAlignment
+        return this
+    }
+
 
     /**
      * 내용 텍스트 bold 타입 추가합니다.

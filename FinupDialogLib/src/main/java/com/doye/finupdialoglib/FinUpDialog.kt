@@ -24,6 +24,8 @@ internal class FinUpDialog(
     private val titleTextBold: Boolean, // 제목
     private val contentTextBold: Boolean, // 내용 문구 스타일
     private var fontSize: Float?, // 존체 폰트 사이즈
+    private var textTitleAlignment: Int?, // 텍스트 타이틀 정렬 방식
+    private var textContentAlignment: Int?, // 텍스트 내용 정렬 방식
     @ColorRes private val pointColor: Int?,
     private val positiveButton: FinUpDialogButton?,
     private val negativeButton: FinUpDialogButton?,
